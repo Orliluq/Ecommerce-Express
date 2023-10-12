@@ -2,9 +2,8 @@
 
 This is an eCommerce project, which is built using React with redux to store data. https://my-json-server.typicode.com/ API has been used for creating dummy product data. Bootstrap is used for styling. Product can be added, or removed from the cart. Product can be added, updated, or deleted from the redux store.
 
-### 🔗 Hosted link: [Ecommerce-Express](https://xpressmart.netlify.app/)
+### 🔗 Hosted link: [Ecommerce-Express](https://ecommerce-express-mu.vercel.app/)
 
-![](./public/1.png)
 
 ## Getting Started with the project
 
@@ -52,11 +51,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - react-router-dom
 - redux-persist
 - react-hot-toast
-
-## 🖥️ Screenshots
-
-![](./public/2.png)
-![](./public/3.png)
-![](./public/4.png)
-![](./public/5.png)
 
