@@ -1,5 +1,5 @@
 .navbar {
-  background: #9bb1ff;
+  background: #c1d605;
 }
 
 .logoImg {
@@ -12,7 +12,7 @@
 }
 
 .firstLetter {
-  color: #fa0f32;
+  color: #fa3e0f;
 }
 
 .cartWrapper img {
@@ -24,5 +24,5 @@
   width: 20px;
   right: -5px;
   top: -7px;
-  background: #ff6161;
+  background: #9b0909c4;
 }
