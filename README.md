@@ -2,6 +2,9 @@
 
 This is an eCommerce project, which is built using React with redux to store data. https://my-json-server.typicode.com/ API has been used for creating dummy product data. Bootstrap is used for styling. Product can be added, or removed from the cart. Product can be added, updated, or deleted from the redux store.
 
+![e-commerce](https://github.com/Orliluq/Ecommerce-Express/assets/122529721/31ceb160-a476-49bf-ac31-a24d93b12eed)
+
+
 ### 🔗 Hosted link: [Ecommerce-Express](https://ecommerce-express-mu.vercel.app/)
 
 
