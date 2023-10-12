@@ -1,0 +1,12 @@
+.cardWrapper{
+    width: 90%;
+}
+
+.editBtn{
+    border: none;
+    background: transparent;
+}
+
+.btnImg{
+    width: 30px;
+}

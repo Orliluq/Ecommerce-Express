@@ -1,0 +1,11 @@
+.section{
+    background: #d2c9ff;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.deleteIcon{
+    width: 25px;
+}

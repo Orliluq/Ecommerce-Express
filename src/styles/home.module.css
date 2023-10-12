@@ -1,0 +1,21 @@
+.spinner {
+  top: 50%;
+  left: 50%;
+  width: 3rem;
+  height: 3rem;
+  color: #f7b030;
+}
+
+.productCardWrapper {
+  width: 15rem;
+}
+
+.cardImg {
+  width: 100%;
+  height: 200px;
+}
+
+.sortBtn {
+  top: 5rem;
+  right: 5rem;
+}

@@ -1,0 +1,28 @@
+.navbar {
+  background: #9bb1ff;
+}
+
+.logoImg {
+  width: 40px;
+  height: 35px;
+}
+
+.siteName {
+  color: #1b1b1b;
+}
+
+.firstLetter {
+  color: #fa0f32;
+}
+
+.cartWrapper img {
+  width: 40px;
+}
+
+.itemsInCart {
+  height: 20px;
+  width: 20px;
+  right: -5px;
+  top: -7px;
+  background: #ff6161;
+}
