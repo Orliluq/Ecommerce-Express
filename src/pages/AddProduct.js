@@ -7,7 +7,7 @@ export default function AddProduct(props) {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState(0);
-  const [rating, setRating] = useState(0);
+/*   const [rating, setRating] = useState(0); */
   const [imageUrl, setImageUrl] = useState('');
 
   const handleSubmit = (e) => {
@@ -17,11 +17,11 @@ export default function AddProduct(props) {
       title: name,
       description,
       price,
-      ratings: rating,
+      /* ratings: rating, */
       img: imageUrl,
     };
     addProduct(product);
-    toast.success('Product added', {
+    toast.success('Producto agregado', {
       position: 'top-center',
       style: {
         borderRadius: '10px',
@@ -32,14 +32,14 @@ export default function AddProduct(props) {
   };
 
   return (
-    <div className="container mt-4 col-md-4 border p-3 rounded  shadow-lg">
+    <div className="container mt-2 col-md-4 border p-3 rounded  shadow-lg">
       <div className="d-flex justify-content-center my-2">
-        <h3>Add product</h3>
+        <h3>Agregar Producto</h3>
       </div>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
+        <div className="mb-2">
           <label htmlFor="name" className="form-label">
-            Product Name
+            Producto
           </label>
           <input
             type="text"
@@ -50,7 +50,7 @@ export default function AddProduct(props) {
         </div>
         <div className="mb-3">
           <label htmlFor="description" className="form-label">
-            Description
+            Descripción
           </label>
           <input
             type="text"
@@ -63,7 +63,7 @@ export default function AddProduct(props) {
 
         <div className="mb-3">
           <label htmlFor="price" className="form-label">
-            Price
+            Precio
           </label>
           <input
             type="number"
@@ -74,7 +74,7 @@ export default function AddProduct(props) {
           ></input>
         </div>
 
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <label htmlFor="rating" className="form-label" required>
             Rating
           </label>
@@ -88,11 +88,11 @@ export default function AddProduct(props) {
             required
             onChange={(e) => setRating(e.target.value)}
           ></input>
-        </div>
+        </div> */}
 
         <div className="mb-3">
           <label htmlFor="img" className="form-label">
-            Image URL
+            Imagen URL
           </label>
           <input
             type="url"
@@ -101,7 +101,16 @@ export default function AddProduct(props) {
             required
             onChange={(e) => setImageUrl(e.target.value)}
           ></input>
-        </div>
+           </div>
+          <div className="form-group mb-4">
+          <label for="exampleFormControlFile1"></label>
+          <input
+            type="file"
+            className="form-control-file"
+            id="exampleFormControlFile1"
+          ></input>
+          </div>
+       
 
         <div className="d-flex justify-content-center">
           <button
@@ -109,7 +118,7 @@ export default function AddProduct(props) {
             className="btn btn-success "
             style={{ width: '50%' }}
           >
-            Add
+            Agregar
           </button>
         </div>
       </form>

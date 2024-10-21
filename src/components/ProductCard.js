@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Ratings from './Ratings';
+/* import Ratings from './Ratings'; */
 import styles from '../styles/home.module.css';
 import toast from 'react-hot-toast';
 
@@ -13,7 +13,7 @@ export default function ProductCard(props) {
       (item) => item.id === product.id
     );
     if (filteredCartItems.length > 0) {
-      toast.error('Product already in cart', {
+      toast.error('Producto ya en el carrito', {
         position: 'top-center',
         style: {
           borderRadius: '10px',
@@ -26,7 +26,7 @@ export default function ProductCard(props) {
       product.key = product.id;
       product.qty = 1;
       addToCartHandler(product);
-      toast.success('Added to cart', {
+      toast.success('Agregado al carrito', {
         position: 'top-center',
         style: {
           borderRadius: '10px',
@@ -45,15 +45,15 @@ export default function ProductCard(props) {
         <img
           src={`${img}`}
           alt="product-img"
-          className={`cart-img-top rounded ${styles.cardImg}`}
+          className={`cart-img-top rounded-1 ${styles.cardImg}`}
         />
 
-        <div className="card-body text-center">
+        <div className="card-body text-center"> 
           <div className="mb-2">
-            <p className="font-weight-semibold mb-2">
+            <p className="font-weight-bold mb-2">
               <Link
                 to={`/product/${id}`}
-                className="text-default mb-2"
+                className="text-dark mb-2 font-weight-bold text-decoration-none"
                 data-abc="true"
               >
                 {title}
@@ -66,14 +66,14 @@ export default function ProductCard(props) {
             {price}
           </h5>
 
-          <Ratings ratings={ratings} />
+          {/* <Ratings ratings={ratings} /> */}
 
           <button
-            type="button mt-1"
-            className="btn btn-warning btn-sm"
+            type="button mt-2"
+            className="btn btn-outline-info btn-sm mt-2"
             onClick={() => handleAddToCart(product)}
           >
-            <i className="fa fa-cart-plus mr-2"></i> Add to cart
+            <i className="fa fa-cart-plus mr-2"></i> Agregar al carrito
           </button>
         </div>
       </div>

@@ -71,6 +71,7 @@ export const decreaseQty = (product) => {
 export function handleGetAllProducts() {
   const url = 'https://my-json-server.typicode.com/rahul4019/server/products';
 
+
   return function (dispatch) {
     fetch(url)
       .then((response) => response.json())

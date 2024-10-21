@@ -1,11 +1,26 @@
-.section{
-    background: #6cd3ec;
+.section {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Para centrar la tarjeta verticalmente */
 }
 
 .card {
-    border-radius: 15px;
+  border-radius: 15px;
+  padding: 20px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
 }
 
-.deleteIcon{
-    width: 25px;
+.card:hover {
+  transform: scale(1.05) translateZ(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.deleteIcon {
+  width: 25px;
+  cursor: pointer;
 }

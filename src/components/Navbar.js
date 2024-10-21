@@ -10,42 +10,51 @@ export default function Navbar(props) {
         <Link className="navbar-brand" to="/">
           <img
             className={`${styles.logoImg} d-inline-block`}
-            src="https://cdn-icons-png.flaticon.com/512/3081/3081648.png"
+            src="/sharing.png"
             alt="logo"
           />
           <span
             className={`ms-2 text-dark ${styles.siteName} d-none d-sm-inline-block `}
           >
-            <strong className={`fs-4 ${styles.firstLetter}`}>X</strong>
-            press
+            <strong className={`fs-4 ${styles.firstLetter}`}>   DLCA</strong>
+            Tecnology
           </span>
         </Link>
 
         <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-md-5 d-flex flex-row">
-          <li className="nav-item ms-sm-5 mx-2">
+          <li className="nav-item ms-sm-5 mx-3">
             <Link
-              className="nav-link fw-semibold text-dark"
-              aria-current="page"
+              className={`btn btn-outline-primary fw-semibold text-dark`}
               to="/"
             >
-              Products
+              Nosotros
             </Link>
           </li>
           <li className="nav-item ms-sm-5 mx-2">
             <Link
-              className="nav-link fw-semibold text-dark"
+              className={`btn btn-outline-primary fw-semibold text-dark`}
+              aria-current="page"
+              to="/home"
+            >
+              Productos
+            </Link>
+          </li>
+          <li className="nav-item ms-sm-5 mx-3">
+            <Link
+              className={`btn btn-outline-primary fw-semibold text-dark`}
               aria-current="page"
               to="/addProduct"
             >
-              Add a product
+              Agregar producto
               <img
-                src="https://cdn-icons-png.flaticon.com/512/4315/4315609.png"
+                src="/plus.png"
                 alt=""
-                className="ms-1"
+                className="ms-2"
                 style={{ width: '20px' }}
               />
             </Link>
           </li>
+          
         </ul>
 
         <div className=""></div>
@@ -55,7 +64,7 @@ export default function Navbar(props) {
         >
           <Link to="/cart">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/891/891462.png"
+              src="/shopping-cart.png"
               alt="cart"
             />
           </Link>

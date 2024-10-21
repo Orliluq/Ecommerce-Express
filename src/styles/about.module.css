@@ -1,0 +1,121 @@
+.aboutContainer {
+  background-color: #ffffff; /* Color de fondo suave */
+  padding: 10px;
+  overflow: hidden; /* Evita que el contenido se desborde */
+  max-width: 100%; 
+}
+
+.carousel-item {
+  transition: transform 0.5s ease; /* Transición suave para el efecto hover */
+}
+
+.carousel-item:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.carouselImage {
+  height: 100vh; /* Ajusta la altura del carrusel */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+  width: 100%; /* Asegúrate de que la imagen cubra el área */
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-indicators {
+  bottom: 10px; /* Ajusta la posición de los indicadores */
+}
+
+.carousel-indicators button {
+  background-color: #007bff; /* Color de los círculos */
+  border-radius: 50%; /* Hace que los indicadores sean circulares */
+  width: 12px; /* Ancho del círculo */
+  height: 12px; /* Alto del círculo */
+  opacity: 0.5; /* Opacidad inicial */
+}
+
+.carousel-indicators .active {
+  opacity: 1; /* Opacidad del círculo activo */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none; /* Oculta las flechas */
+}
+
+.brandLogos {
+  margin-top: 20px;
+}
+
+.brandLogo {
+  width: 120px; /* Ajusta el tamaño de los logos */
+  margin: 0 15px; /* Espaciado entre logos */
+  transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.brandLogo:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el mouse */
+}
+
+.offerSection {
+  background-color: #f0f0f0; /* Color gris tenue */
+ /*  border-radius: 8px; /* Bordes redondeados */
+  padding: 40px; /* Espaciado interno */
+}
+
+.cardContainer {
+  display: flex; /* Usar flexbox para alinear las tarjetas horizontalmente */
+  justify-content: center; /* Centra las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas más pequeñas */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.card {
+  width: 300px; /* Ajusta el ancho de las tarjetas */
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #007bff; /* Borde azul */
+  border-radius: 10px;
+  background-color: white;
+  transition: transform 0.3s;
+  margin: 8px; /* Espaciado entre tarjetas */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.icon {
+  font-size: 40px; /* Tamaño del ícono */
+  color: #007bff; /* Color del ícono */
+}
+
+.footer {
+ /*  background: linear-gradient(145deg, #9ABCD3, #759AB5); */ /* Gradiente para dar un efecto de profundidad */
+  /* border-top: 1px solid #e0e0e0; */ /* Línea superior */
+  height: 100%; /* Mantiene la proporción del logo */
+  width: 100%; /* Ajusta el tamaño del logo */
+}
+
+.footerLogo {
+  width: 100px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.footer a {
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  color: #0b5394; /* Color de los enlaces */
+  font-size: 1rem;
+}
+
+.footer a:hover {
+  text-decoration: none; /* Sin subrayado al pasar el mouse */
+  color: #0b5394; /* Color de los enlaces al pasar el mouse */
+}
+
+.companyName {
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  color: #333333; /* Color oscuro */
+}
