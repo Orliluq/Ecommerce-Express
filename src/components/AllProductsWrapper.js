@@ -14,7 +14,7 @@ export default function (props) {
         type="button"
         className={`btn btn-light border border-secondary border-2 rounded-pill fw-semibold position-absolute  ${styles.sortBtn}`}
       >
-        <span onClick={() => setSortByPrice(true)}>Filtrar por precio</span>
+        <span onClick={() => setSortByPrice(true)}>Sort by price</span>
         {sortByPrice ? (
           <i
             className="fa-regular fa-circle-xmark ms-2 "

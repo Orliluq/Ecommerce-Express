@@ -46,7 +46,7 @@ export default function Cart(props) {
                   <div className="col-lg-4 bg-grey">
                     <div className="p-5">
                       <h4 className="fw-bold mb-5 mt-2 pt-1 text-muted">
-                        DETALLES DEL PRECIO
+                        PRICE DETAILS
                       </h4>
 
                       <div className="d-flex justify-content-between mb-4">
@@ -54,14 +54,14 @@ export default function Cart(props) {
                         <h6>{cartItems.length}</h6>
                       </div>
 
-                      {/* <div className="d-flex justify-content-between mb-4">
+                      <div className="d-flex justify-content-between mb-4">
                         <h6 className="text-capitalize">delivery charges </h6>
                         <h6 className="text-success">Free</h6>
-                      </div> */}
+                      </div>
 
                       <div className="d-flex justify-content-between mb-5">
-                        <h6 className="text-capitalize">Monto Total</h6>
-                        <h6>$ {price}</h6>
+                        <h6 className="text-capitalize">Total Amount</h6>
+                        <h6>₹ {price}</h6>
                       </div>
                     </div>
                   </div>
@@ -78,11 +78,11 @@ export default function Cart(props) {
       style={{ height: '80vh' }}
     >
       <img
-        src="/shopping-cart.png"
+        src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png"
         alt=""
         style={{ width: '150px' }}
       />
-      <h3 className="text-danger">Tu carrito está vacío!</h3>
+      <h3 className="text-danger">Your cart is empty!</h3>
     </div>
   );
 }

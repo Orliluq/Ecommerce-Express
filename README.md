@@ -1,11 +1,11 @@
-# DLCA SHOP
+# Ecommerce Express
 
 This is an eCommerce project, which is built using React with redux to store data. https://my-json-server.typicode.com/ API has been used for creating dummy product data. Bootstrap is used for styling. Product can be added, or removed from the cart. Product can be added, updated, or deleted from the redux store.
 
-![DLCA-shop](https://github.com/Orliluq/Ecommerce-Express/assets/122529721/81cf2910-c026-47d7-b518-3c6830b78159)
+![e-commerce](https://github.com/Orliluq/Ecommerce-Express/assets/122529721/81cf2910-c026-47d7-b518-3c6830b78159)
 
 
-### 🔗 Hosted link: [DLCA-SHOP](https://ecommerce-express-mu.vercel.app/)
+### 🔗 Hosted link: [Ecommerce-Express](https://ecommerce-express-mu.vercel.app/)
 
 ## Getting Started with the project
 

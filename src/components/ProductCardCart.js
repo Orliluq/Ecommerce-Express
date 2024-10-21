@@ -32,7 +32,7 @@ export default function ProductCardCart(props) {
         </div>
 
         <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-          <h6 className="mb-0">${price}</h6>
+          <h6 className="mb-0">₹{price}</h6>
         </div>
 
         <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
@@ -46,7 +46,7 @@ export default function ProductCardCart(props) {
           </button>
 
           <div
-            className="bg-success text-white border border-2 p-2 d-flex justify-content-center align-items-center rounded-circle fw-semibold"
+            className="bg-warning border border-2 p-2 d-flex justify-content-center align-items-center rounded-circle fw-semibold"
             style={{ width: '2rem', height: '2rem' }}
           >
             {product.qty}
@@ -65,7 +65,7 @@ export default function ProductCardCart(props) {
         <div className="col-md-1 col-lg-1 col-xl-1 text-end">
           <a href="#!" className="text-muted">
             <img
-              src="/delete.png"
+              src="https://cdn-icons-png.flaticon.com/512/1632/1632602.png"
               alt="delete-icon"
               className={styles.deleteIcon}
               onClick={() => removeFromCartHandler(product)}

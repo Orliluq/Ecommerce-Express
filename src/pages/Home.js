@@ -18,7 +18,7 @@ export default function Home(props) {
 
   return (
     <div className="container ">
-      <div className="d-flex flex-wrap justify-content-around my-5 position-relative">
+      <div className="d-flex flex-wrap justify-content-around my-5 positon-relative">
         {unSortedProducts && sortedProducts ? (
           <AllProductsWrapper
             unSortedProducts={unSortedProducts} 
@@ -32,18 +32,6 @@ export default function Home(props) {
             role="status"
           ></div>
         )}
-      </div>
-      {/* Footer agregado */}
-      <div className="text-center">
-        <h2 className="mb-3">¡No te pierdas nuestras ofertas!</h2>
-        <a 
-          href="https://wa.me/584141521511" // Reemplaza con tu número de WhatsApp
-          className="btn btn-primary mb-5"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contáctanos por WhatsApp
-        </a>
       </div>
     </div>
   );
